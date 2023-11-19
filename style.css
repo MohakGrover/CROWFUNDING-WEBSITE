@@ -1,0 +1,260 @@
+ /* CSS code for styling the website */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #0ac5a6;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav ul li {
+    margin-left: 20px;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav ul li a:hover {
+    color: #666;
+  }
+
+  .nav button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .nav button:hover {
+    background-color: #ff9900;
+  }
+
+  .hero {
+    background-color: rgb(4, 123, 123);
+    background-image: url;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hero p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero a {
+    display: inline-block;
+    background-color: white;
+    color: #ff6600;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .hero a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px; 
+  }
+
+  .cards {
+    display: grid; 
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    grid-gap:20px; 
+    align-items: start; 
+    justify-content: center; 
+    margin-top:40px; 
+  }
+
+
+.cards .card {
+  background-color:white; 
+  border-radius: 10px; 
+  box-shadow:0 4px 8px rgba(0,0,0,0.1); 
+  overflow: hidden; 
+}
+
+.cards .card img {
+  width: 100%;     
+  height: 200px;     
+  object-fit: cover;     
+}
+
+.cards .card .content {
+  padding: 20px;   
+}
+
+.cards .card .content h3 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+    
+}
+
+.cards .card .content p {
+  font-size: 16px; 
+  line-height: 1.5;     
+}
+
+.cards .card .content a {
+  display:inline-block; 
+  background-color:#ff6600; 
+  color:white; 
+  padding:10px 20px; 
+  text-decoration:none;     
+  font-weight:bold; 
+  border-radius:5px; 
+  margin-top:20px;
+  text-align: center;
+}
+.cards .card .content:hover{
+  background-color:#ff9900;
+  transform: scale(1.1);
+}
+footer {
+  background-color: #094f54;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 
+.girl img {
+  border-radius: 50%;                                                         
+}  */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
