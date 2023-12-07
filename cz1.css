@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #0c8486;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h2 {
+    margin-bottom: 30px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section p {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+#mohak p{
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #mohak{
+    background-color: #0c8486;
+    color: rgb(249,16,49);
+  }
+  #mohak p{
+    margin: 0;
+  }
+  span {
+    content: "\2709";
+    height: 100px;
+  }

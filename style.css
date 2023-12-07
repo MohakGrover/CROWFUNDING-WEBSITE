@@ -1,42 +1,63 @@
  /* CSS code for styling the website */
-  body {
+*
+{
+  padding: 0;
+  margin:0;
+}
+ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
   }
-
+/* heading */
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
   }
 
   .logo {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 5px 5px 5px #0ac5a6;
+    margin-left: 5px;
+    width: 170px;
+    height: 130px;
+    display: inline-block;
+    filter: drop-shadow( 2px 2px 2px red);
   }
 
   .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    position:relative;
+    top:24px;
+    overflow: hidden;
   }
 
-  .nav ul {
-    list-style: none;
-    display: flex;
-  }
 
-  .nav ul li {
-    margin-left: 20px;
+.nav button
+{
+  position: absolute;
+  right:10px;
+  /* color: #ccc; */
+}
+#submit a
+{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+  .nav li
+  {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 10px;
+      border-radius: 10px;
+  
   }
-
+  .nav li:hover
+  {
+    background-color:#ccc;
+  }
   .nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    
   }
 
   .nav ul li a:hover {
@@ -61,6 +82,7 @@
     background-image: url;
     background-size: cover;
     background-position: center;
+    width:100%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -159,8 +181,9 @@
   text-align: center;
 }
 .cards .card .content:hover{
-  background-color:#ff9900;
+  background-color:#ffab2d;
   transform: scale(1.1);
+  box-shadow: #ff9900;
 }
 footer {
   background-color: #094f54;
@@ -257,4 +280,36 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
